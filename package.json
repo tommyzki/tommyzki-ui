@@ -1,5 +1,5 @@
 {
-  "name": "tommyzki-ui",
+  "name": "@tommyzki/ui",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -46,5 +46,12 @@
     "jest-cli": "^29.7.0",
     "puppeteer": "^24.3.0"
   },
-  "license": "MIT"
+  "dependencies": {
+    "stencil": "^0.0.5"
+  },
+  "author": "Tommy Miyazaki",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
