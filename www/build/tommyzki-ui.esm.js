@@ -1,0 +1,2 @@
+import{p as o,b as t}from"./p-CokNeXLK.js";export{s as setNonce}from"./p-CokNeXLK.js";import{g as a}from"./p-DQuL1Twl.js";var e=()=>{const t=import.meta.url;const a={};if(t!==""){a.resourcesUrl=new URL(".",t).href}return o(a)};e().then((async o=>{await a();return t([["p-855e8716",[[1,"tommyzki-button",{variant:[1],size:[1],disabled:[4],loading:[4],fullwidth:[4],rounded:[4],label:[1]}]]]],o)}));
+//# sourceMappingURL=tommyzki-ui.esm.js.map
