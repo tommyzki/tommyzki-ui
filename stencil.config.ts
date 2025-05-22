@@ -1,7 +1,9 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'tommyzki-ui',
+  plugins: [sass()],
   outputTargets: [
     {
       type: 'dist',
@@ -9,8 +11,6 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
-      externalRuntime: false,
     },
     {
       type: 'docs-readme',

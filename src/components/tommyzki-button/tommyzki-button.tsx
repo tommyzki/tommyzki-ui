@@ -2,15 +2,30 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'tommyzki-button',
-  styleUrl: 'tommyzki-button.css',
+  styleUrl: 'tommyzki-button.scss',
   shadow: true,
 })
 export class TommyzkiButton {
-  @Prop() label: string = 'Click Me';
+  @Prop() variant: 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'link' = 'primary';
+  @Prop() size: 'sm' | 'md' | 'lg' = 'md';
+  @Prop() disabled = false;
+  @Prop() loading = false;
+  @Prop() fullwidth = false;
+  @Prop() rounded = false;
 
   render() {
+    const classList = [
+      'btn',
+      `btn--${this.variant}`,
+      `btn--${this.size}`,
+      this.fullwidth ? 'btn--full' : '',
+      this.rounded ? 'btn--rounded' : '',
+      this.loading ? 'btn--loading' : '',
+    ].join(' ');
     return (
-      <button class="btn">{this.label}</button>
+      <button class={classList} disabled={this.disabled || this.loading}>
+        {this.loading ? <span class="spinner" /> : <slot />} This is Button
+      </button>
     );
   }
 }

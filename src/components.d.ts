@@ -6,31 +6,16 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
     interface TommyzkiButton {
-        "label": string;
+        "disabled": boolean;
+        "fullwidth": boolean;
+        "loading": boolean;
+        "rounded": boolean;
+        "size": 'sm' | 'md' | 'lg';
+        "variant": 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'link';
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLTommyzkiButtonElement extends Components.TommyzkiButton, HTMLStencilElement {
     }
     var HTMLTommyzkiButtonElement: {
@@ -38,30 +23,19 @@ declare global {
         new (): HTMLTommyzkiButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
         "tommyzki-button": HTMLTommyzkiButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface TommyzkiButton {
-        "label"?: string;
+        "disabled"?: boolean;
+        "fullwidth"?: boolean;
+        "loading"?: boolean;
+        "rounded"?: boolean;
+        "size"?: 'sm' | 'md' | 'lg';
+        "variant"?: 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'link';
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
         "tommyzki-button": TommyzkiButton;
     }
 }
@@ -69,7 +43,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "tommyzki-button": LocalJSX.TommyzkiButton & JSXBase.HTMLAttributes<HTMLTommyzkiButtonElement>;
         }
     }
