@@ -1,6 +1,7 @@
 dist/
-www/
 loader/
+www
+storybook-static
 
 *~
 *.sw[mnpcod]
@@ -26,5 +27,3 @@ UserInterfaceState.xcuserstate
 .env
 
 *storybook.log
-
-storybook-static
