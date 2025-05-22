@@ -9,6 +9,7 @@ export namespace Components {
     interface TommyzkiButton {
         "disabled": boolean;
         "fullwidth": boolean;
+        "label": string;
         "loading": boolean;
         "rounded": boolean;
         "size": 'sm' | 'md' | 'lg';
@@ -30,6 +31,7 @@ declare namespace LocalJSX {
     interface TommyzkiButton {
         "disabled"?: boolean;
         "fullwidth"?: boolean;
+        "label"?: string;
         "loading"?: boolean;
         "rounded"?: boolean;
         "size"?: 'sm' | 'md' | 'lg';

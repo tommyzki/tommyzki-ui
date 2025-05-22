@@ -12,6 +12,7 @@ export class TommyzkiButton {
   @Prop() loading = false;
   @Prop() fullwidth = false;
   @Prop() rounded = false;
+  @Prop() label = 'this is button';
 
   render() {
     const classList = [
@@ -24,7 +25,7 @@ export class TommyzkiButton {
     ].join(' ');
     return (
       <button class={classList} disabled={this.disabled || this.loading}>
-        {this.loading ? <span class="spinner" /> : <slot />} This is Button
+        {this.loading ? <span class="spinner" /> : <slot />} {this.label}
       </button>
     );
   }
