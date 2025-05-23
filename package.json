@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "homepage": "https://tommyzki.github.io/tommyzki-ui",
   "devDependencies": {
     "@types/node": "^22.15.21",
