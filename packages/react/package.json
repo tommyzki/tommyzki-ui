@@ -38,6 +38,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@tommyzki-ui/core": "*"
+    "@tommyzki-ui/core": "^0.0.1"
   }
 }
