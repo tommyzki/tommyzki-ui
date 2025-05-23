@@ -11,7 +11,6 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "install-all": "lerna exec npm install",
     "prestart": "sh -c 'nvm install $(cat .nvmrc)' && sh -c 'nvm use $(cat .nvmrc)'",
     "start": "lerna run start --scope=@tommyzki-ui/core --stream",

@@ -1,6 +1,7 @@
 /*
- * Public API Surface of stencil-wrapper
+ * Public API Surface of component-library
  */
 
-export * from './lib/stencil-wrapper.service';
-export * from './lib/stencil-wrapper.component';
+export { DIRECTIVES } from './lib';
+export * from './lib/stencil-wrapper.module';
+export * from './lib/proxy';

@@ -27,11 +27,10 @@ export const config: Config = {
       componentCorePackage: '@tommyzki-ui/core',
       outputType: 'component',
       directivesProxyFile: '../../packages/angular/libs/stencil-wrapper/src/lib/proxy.ts',
-      directivesArrayFile: '../angular/projects/component-library/src/lib/stencil-generated/index.ts',
+      directivesArrayFile: '../../packages/angular/libs/stencil-wrapper/src/lib/index.ts',
     }),
     reactOutputTarget({
-      componentCorePackage: '@tommyzki-ui/core',
-      proxiesFile: '../react/lib/components/stencil-generated/index.ts',
+      outDir: '../react/lib/components/stencil-generated/',
     }),
   ],
   testing: {

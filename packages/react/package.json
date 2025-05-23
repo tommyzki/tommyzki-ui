@@ -1,7 +1,7 @@
 {
   "name": "@tommyzki-ui/react",
   "version": "0.0.1",
-  "description": "> TODO: description",
+  "description": "A modern, reusable, and fast UI component library built with Stencil — by tommyzki.",
   "author": "Tommyzki <miyazaki.tommy@gmail.com>",
   "homepage": "https://tommyzki.github.io/tommyzki-ui/tree/main/packages/react#readme",
   "license": "ISC",
@@ -22,16 +22,22 @@
   "scripts": {
     "test": "node ./__tests__/react.test.js",
     "build": "npm run tsc",
-    "watch": "tsc -p -w",
-    "tsc": "tsc -p ."
+    "watch": "tsc -p . -w",
+    "tsc": "tsc -p . --outDir ./dist"
   },
   "bugs": {
     "url": "https://github.com/tommyzki/tommyzki-ui/issues"
   },
   "devDependencies": {
-    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "stencil-library": "*"
   }
 }

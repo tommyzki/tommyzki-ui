@@ -1,5 +1,5 @@
 
-import * as d from './components';
+import * as d from './proxy';
 
 export const DIRECTIVES = [
   d.TommyzkiButton
