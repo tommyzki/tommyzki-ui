@@ -39,5 +39,6 @@
   },
   "dependencies": {
     "@tommyzki-ui/core": "^0.0.1"
-  }
+  },
+  "gitHead": "d1316657f2a733e6d29e3af1e7c3898b832e510b"
 }
