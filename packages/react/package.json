@@ -38,6 +38,6 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "@tommyzki-ui/core": "*"
   }
 }
