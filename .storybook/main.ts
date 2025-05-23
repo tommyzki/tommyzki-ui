@@ -15,16 +15,17 @@ const config: StorybookConfig = {
     "options": {}
   },
   previewHead: (head) => `${head}
-      <script type="module" src="/www/build/tommyzki-ui.esm.js"></script>
-      <script nomodule src="/www/build/tommyzki-ui.js"></script>
+      <script type="module" src="./www/build/tommyzki-ui.esm.js"></script>
+      <script nomodule src="./www/build/tommyzki-ui.js"></script>
     `,
   async viteFinal(config) {
     const {mergeConfig} = await import('vite');
     const {liveReload} = await import('vite-plugin-live-reload');
 
     return mergeConfig(config, {
+      base: '/tommyzki-ui/',
       plugins: [
-        liveReload(['www/build/tommyzki-ui.esm.js', 'www/build/tommyzki-ui.js']),
+        liveReload(['./www/build/tommyzki-ui.esm.js', './www/build/tommyzki-ui.js']),
       ]
     });
   },
