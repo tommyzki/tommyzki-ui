@@ -1,22 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { TommyzkiButton } from '../tommyzki-button';
 
-// describe('tommyzki-button', () => {
-//   it('renders', async () => {
-//     const page = await newSpecPage({
-//       components: [TommyzkiButton],
-//       html: `<tommyzki-button></tommyzki-button>`,
-//     });
-//     expect(page.root).toEqualHtml(`
-//       <tommyzki-button>
-//         <mock:shadow-root>
-//           <slot></slot>
-//         </mock:shadow-root>
-//       </tommyzki-button>
-//     `);
-//   });
-// });
-
 describe('tommyzki-button', () => {
   it('renders with default label', async () => {
     const page = await newSpecPage({
