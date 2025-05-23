@@ -24,7 +24,7 @@ export const config: Config = {
       serviceWorker: null,
     },
     angularOutputTarget({
-      componentCorePackage: '@tommyzki-ui/core',
+      componentCorePackage: '@tommyzki/ui-core',
       outputType: 'component',
       directivesProxyFile: '../../packages/angular/libs/stencil-wrapper/src/lib/proxy.ts',
       directivesArrayFile: '../../packages/angular/libs/stencil-wrapper/src/lib/index.ts',

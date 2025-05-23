@@ -1,5 +1,5 @@
 {
-  "name": "@tommyzki-ui/angular",
+  "name": "@tommyzki/ui-angular",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,7 @@
     "@angular/platform-browser": "^19.2.12",
     "@angular/platform-browser-dynamic": "^19.2.12",
     "@angular/router": "^19.2.12",
-    "@tommyzki-ui/core": "^0.0.1",
+    "@tommyzki/ui-core": "^0.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.1"
@@ -37,5 +37,5 @@
     "ng-packagr": "^19.2.2",
     "typescript": "~5.8.3"
   },
-  "gitHead": "d1316657f2a733e6d29e3af1e7c3898b832e510b"
+  "gitHead": "5d1f015f2cc0163ca070e4f8cc16076aa03bc3f4"
 }

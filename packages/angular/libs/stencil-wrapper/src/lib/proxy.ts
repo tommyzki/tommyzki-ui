@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-import { Components } from '@tommyzki-ui/core';
+import { Components } from '@tommyzki/ui-core';
 
 
 @ProxyCmp({

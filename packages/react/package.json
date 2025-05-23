@@ -1,9 +1,9 @@
 {
-  "name": "@tommyzki-ui/react",
+  "name": "@tommyzki/ui-react",
   "version": "0.0.1",
   "description": "A modern, reusable, and fast UI component library built with Stencil — by tommyzki.",
   "author": "Tommyzki <miyazaki.tommy@gmail.com>",
-  "homepage": "https://tommyzki.github.io/tommyzki-ui/tree/main/packages/react#readme",
+  "homepage": "https://tommyzki.github.io/tommyzki/ui-tree/main/packages/react#readme",
   "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -26,7 +26,7 @@
     "tsc": "tsc -p . --outDir ./dist"
   },
   "bugs": {
-    "url": "https://github.com/tommyzki/tommyzki-ui/issues"
+    "url": "https://github.com/tommyzki/tommyzki/ui-issues"
   },
   "devDependencies": {
     "@types/react": "^19.1.0",
@@ -38,7 +38,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tommyzki-ui/core": "^0.0.1"
+    "@tommyzki/ui-core": "^0.0.1"
   },
-  "gitHead": "d1316657f2a733e6d29e3af1e7c3898b832e510b"
+  "gitHead": "5d1f015f2cc0163ca070e4f8cc16076aa03bc3f4"
 }

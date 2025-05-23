@@ -9,7 +9,7 @@
 
 import type { StencilReactComponent } from '@stencil/react-output-target/runtime';
 import { createComponent } from '@stencil/react-output-target/runtime';
-import { TommyzkiButton as TommyzkiButtonElement, defineCustomElement as defineTommyzkiButton } from "@tommyzki-ui/core/dist/components/tommyzki-button.js";
+import { TommyzkiButton as TommyzkiButtonElement, defineCustomElement as defineTommyzkiButton } from "@tommyzki/ui-core/dist/components/tommyzki-button.js";
 import React from 'react';
 
 export type TommyzkiButtonEvents = NonNullable<unknown>;

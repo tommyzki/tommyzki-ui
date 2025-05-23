@@ -23,7 +23,7 @@ const config: StorybookConfig = {
     const {liveReload} = await import('vite-plugin-live-reload');
 
     return mergeConfig(config, {
-      base: '/tommyzki-ui/',
+      base: '/tommyzki/ui-',
       plugins: [
         liveReload(['./www/build/tommyzki-ui.esm.js', './www/build/tommyzki-ui.js']),
       ]

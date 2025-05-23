@@ -1,5 +1,5 @@
 {
-  "name": "@tommyzki-ui/core",
+  "name": "@tommyzki/ui-core",
   "version": "0.0.1",
   "homepage": "https://tommyzki.github.io/tommyzki-ui",
   "description": "A modern, reusable, and fast UI component library built with Stencil — by tommyzki.",
@@ -8,7 +8,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/tommyzki-ui/tommyzki-ui.esm.js",
+  "unpkg": "dist/tommyzki/ui-tommyzki-ui.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/tommyzki/tommyzki-ui.git"
@@ -45,5 +45,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "d1316657f2a733e6d29e3af1e7c3898b832e510b"
+  "gitHead": "5d1f015f2cc0163ca070e4f8cc16076aa03bc3f4"
 }
