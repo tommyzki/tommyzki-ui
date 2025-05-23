@@ -1,6 +1,6 @@
 {
   "name": "@tommyzki/ui-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A modern, reusable, and fast UI component library built with Stencil — by tommyzki.",
   "author": "Tommyzki <miyazaki.tommy@gmail.com>",
   "homepage": "https://tommyzki.github.io/tommyzki/ui-tree/main/packages/react#readme",
@@ -38,7 +38,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tommyzki/ui-core": "^0.0.1"
+    "@tommyzki/ui-core": "^0.1.0"
   },
   "gitHead": "5d1f015f2cc0163ca070e4f8cc16076aa03bc3f4"
 }
