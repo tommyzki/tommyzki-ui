@@ -20,6 +20,15 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface TommyzkiButton {
+        "disabled": boolean;
+        "fullwidth": boolean;
+        "label": string;
+        "loading": boolean;
+        "rounded": boolean;
+        "size": 'sm' | 'md' | 'lg';
+        "variant": 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'link';
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +37,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLTommyzkiButtonElement extends Components.TommyzkiButton, HTMLStencilElement {
+    }
+    var HTMLTommyzkiButtonElement: {
+        prototype: HTMLTommyzkiButtonElement;
+        new (): HTMLTommyzkiButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "tommyzki-button": HTMLTommyzkiButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +63,18 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface TommyzkiButton {
+        "disabled"?: boolean;
+        "fullwidth"?: boolean;
+        "label"?: string;
+        "loading"?: boolean;
+        "rounded"?: boolean;
+        "size"?: 'sm' | 'md' | 'lg';
+        "variant"?: 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'link';
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "tommyzki-button": TommyzkiButton;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +82,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "tommyzki-button": LocalJSX.TommyzkiButton & JSXBase.HTMLAttributes<HTMLTommyzkiButtonElement>;
         }
     }
 }

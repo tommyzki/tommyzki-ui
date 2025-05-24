@@ -15,6 +15,9 @@
     "build": "npm run build.core && npm run build.framework-bindings",
     "build-doc-json": "lerna run build-doc-json --scope=@tommyzki/ui-core --stream",
     "build.core": "lerna run build --scope=@tommyzki/ui-core --stream",
+    "build.react": "lerna run build --scope=@tommyzki/ui-react --stream",
+    "build.vue": "lerna run build --scope=@tommyzki/ui-vue --stream",
+    "build.ang": "lerna run build --scope=@tommyzki/ui-angular --stream",
     "build.framework-bindings": "lerna run build --scope=@tommyzki/ui-{angular,react,vue} --stream",
     "publish": "lerna publish",
 

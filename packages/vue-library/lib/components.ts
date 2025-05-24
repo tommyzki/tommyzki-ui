@@ -14,3 +14,14 @@ export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-co
   'last'
 ]);
 
+
+export const TommyzkiButton = /*@__PURE__*/ defineContainer<JSX.TommyzkiButton>('tommyzki-button', undefined, [
+  'variant',
+  'size',
+  'disabled',
+  'loading',
+  'fullwidth',
+  'rounded',
+  'label'
+]);
+

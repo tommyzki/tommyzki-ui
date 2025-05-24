@@ -1,10 +1,16 @@
 import { Config } from '@stencil/core';
+import { sass } from "@stencil/sass";
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 
 export const config: Config = {
   namespace: 'tommyzki',
+  plugins: [
+    sass({
+      //injectGlobalPaths: ['src/global/scss/utils.scss'], // adds @import 'src/global/scss/utils.scss' statement
+    }),
+  ],
   outputTargets: [
     {
       type: 'dist',

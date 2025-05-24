@@ -1,7 +1,7 @@
 {
   "name": "@tommyzki/ui-angular",
   "version": "0.2.2",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "description": "Angular wrapper for @tommzki/ui-core",
   "repository": {
@@ -11,7 +11,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build component-library --configuration=production",
+    "build": "ng build component-library",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

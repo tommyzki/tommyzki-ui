@@ -1,5 +1,5 @@
 import { Plugin } from 'vue';
-import { defineCustomElements } from 'stencil-library/loader';
+import { defineCustomElements } from '@tommyzki/ui-core/loader';
 
 export const ComponentLibrary: Plugin = {
   async install() {
