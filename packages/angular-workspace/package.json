@@ -1,6 +1,6 @@
 {
   "name": "@tommyzki/ui-angular",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "license": "MIT",
   "description": "Angular wrapper for @tommzki/ui-core",
