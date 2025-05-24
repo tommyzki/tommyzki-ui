@@ -1,7 +1,7 @@
 {
   "name": "@tommyzki/ui-react",
   "sideEffects": false,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "React wrapper for @tommzki/ui-core",
   "license": "MIT",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
     "tsc": "tsc -p . --outDir ./dist"
   },
   "dependencies": {
-    "@tommyzki/ui-core": "^0.2.2"
+    "@tommyzki/ui-core": "^0.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
