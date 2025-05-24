@@ -1,0 +1,40 @@
+{
+  "name": "@tommyzki/ui-react",
+  "sideEffects": false,
+  "version": "0.2.0",
+  "description": "React wrapper for @tommzki/ui-core",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommyzki/tommyzki-ui"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run clean && npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "dependencies": {
+    "@tommyzki/ui-core": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
