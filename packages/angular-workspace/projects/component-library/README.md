@@ -1,24 +1,37 @@
-# ComponentLibrary
+# Angular
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+Angular supports web components fairly well, but to enhance the developer experience, the Angular bindings wrap Tommyzki Web Components as Angular components. This provides benefits such as full type support, Angular forms compatibility, and event handling with Angular's syntax.
 
-## Code scaffolding
+## Tommyzki UI components for Angular
 
-Run `ng generate component component-name --project component-library` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project component-library`.
-> Note: Don't forget to add `--project component-library` or else it will be added to the default project in your `angular.json` file. 
+These are Tommyzki Web Components specifically built for Angular.
 
-## Build
+## Setup
 
-Run `ng build component-library` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install the package:
 
-## Publishing
+```bash
+npm install @tommyzki/ui-angular
+```
 
-After building your library with `ng build component-library`, go to the dist folder `cd dist/component-library` and run `npm publish`.
+Import the module into your `AppModule`:
 
-## Running unit tests
+```ts
+import { TommyzkiUiAngularModule } from '@tommyzki/ui-angular';
 
-Run `ng test component-library` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, TommyzkiUiAngularModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Use the components as you would with standard Angular components:
+
+```html
+<tommyzki-button>Click me</tommyzki-button>
+```
