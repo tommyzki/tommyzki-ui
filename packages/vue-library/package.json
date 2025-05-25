@@ -1,7 +1,7 @@
 {
   "name": "@tommyzki/ui-vue",
   "sideEffects": false,
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Vue wrapper for @tommzki/ui-core.",
   "license": "MIT",
   "main": "dist/index.js",
@@ -30,7 +30,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tommyzki/ui-core": "^0.2.4"
+    "@tommyzki/ui-core": "^0.2.5"
   },
   "gitHead": "bc42612d68156b09a29c8b037212583b556dd242"
 }

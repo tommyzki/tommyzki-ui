@@ -1,6 +1,6 @@
 {
   "name": "@tommyzki/ui-core",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Base components for Tommyzki UI build by Stencil",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@tommyzki/ui-angular",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": false,
   "license": "MIT",
   "description": "Angular wrapper for @tommzki/ui-core",
@@ -40,7 +40,7 @@
     "ng-packagr": "^18.0.0",
     "typescript": "~5.4.2"
   },
-    "publishConfig": {
+  "publishConfig": {
     "directory": "dist/component-library",
     "access": "public"
   },
